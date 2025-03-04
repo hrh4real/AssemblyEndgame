@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "homepage": "https://hrh4real.github.io/Assembly_Endgame",
+"homepage": "https://hrh4real.github.io/AssemblyEndgame",
   "dependencies": {
     "clsx": "^2.1.1",
     "react": "^19.0.0",
