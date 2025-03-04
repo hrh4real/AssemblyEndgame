@@ -2,18 +2,16 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-plugins: [react()],
-base: '/AssemblyEndgame/', // Set base URL for GitHub Pages deployment
-build: {
+  plugins: [react()],
+  base: '/AssemblyEndgame/', // Make sure this matches your repo name exactly
+  build: {
     outDir: 'dist',
     emptyOutDir: true,
-},
-resolve: {
+  },
+  resolve: {
     alias: {
-    '@': resolve(__dirname, './src')
+      '@': resolve(__dirname, './src')
     }
-},
-root: '.', // Set the root directory where index.html is located
+  }
 })
