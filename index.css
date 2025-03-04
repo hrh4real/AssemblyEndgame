@@ -177,3 +177,67 @@ span.chip.lost::before{
 .new-game:hover{
     transform: scale(1.1);
 }
+
+/* Existing styles remain the same, add these media queries at the end */
+
+/* Small devices (phones, 320px and up) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .heading-container > h1 {
+        font-size: 2rem;
+    }
+
+    .heading-container > p {
+        width: 100%;
+        font-size: 1rem;
+        height: auto;
+    }
+
+    .languages {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .keyboard-container {
+        max-width: 100%;
+        gap: 5px;
+    }
+
+    .keyboard-container > button {
+        height: 40px;
+        width: 40px;
+        font-size: 0.9rem;
+    }
+
+    .word-display-container > span {
+        padding: 0.3rem 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 481px and up) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .heading-container > h1 {
+        font-size: 2.5rem;
+    }
+
+    .languages {
+        width: 90%;
+    }
+
+    .keyboard-container {
+        max-width: 90%;
+    }
+}
+
+/* Large devices (desktops, 769px and up) - Default styles already in place */
+@media screen and (min-width: 769px) {
+    /* No additional changes needed for large screens */
+}
